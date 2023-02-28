@@ -26,8 +26,6 @@ const myShoppingList = [
     'Figurine Calciatori Panini'
 ];
 
-
-
   let i = 0;
   console.log('LA MIA LISTA DELLA SPESA:');
 
@@ -35,13 +33,14 @@ const myShoppingList = [
 
   while (i < myShoppingList.length){
     
-      console.log(i);
-      i++;
-      console.log(myShoppingList[i]);
-
-      const listItems = document.createElement('li');
-      listItems.append(myShoppingList[i]);
-      finalList.append(listItems);
+    
+    console.log(myShoppingList[i]);
+    i++;
+    
+    const listItems = document.createElement('li');
+    listItems.append(myShoppingList[i]);
+    console.log(listItems);
+    finalList.append(listItems);
 
   }
 
