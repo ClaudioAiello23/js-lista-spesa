@@ -1,5 +1,6 @@
 'use strict';
 
+// Creo una variabile di tipo Arrey (lista) che contiene la mia lista
 const myShoppingList = [
     'Nutella',
     'Pan grattato',
@@ -26,19 +27,36 @@ const myShoppingList = [
     'Figurine Calciatori Panini'
 ];
 
-  let i = 0;
-  console.log('LA MIA LISTA DELLA SPESA:');
+// Creo una variabile LET "indice" con valore di partenza = posizione 0 (Nutella);
+    let i = 0;
 
-  while (i < myShoppingList.length){
-    
+
+/*Creo un ciclo while impostando che fino a quando l'indice "i" è minore della
+lunghezza dell'Array, si crei da console e su html la lista della spesa;
+inserisco la dicitura "i++" per incrementare successivamente il valore di "i"
+fino a raggiungere la lunghezza dell'Array (per poi fermarsi)*/
+while (i < myShoppingList.length){
+
     console.log(myShoppingList[i]);
-    i++;
-
     const finalList = document.getElementById('shopping_list');
     finalList.innerHTML += `<li>${myShoppingList[i]}</li>`;
-    
-  }
+    i++;
 
+}
+
+
+
+/*Stesso risultato (alternativo) con il ciclo DO-WHILE commentato 
+(testato e funzionante)*/
+
+//   do {
+
+//     console.log(myShoppingList[i]);
+//     const finalList = document.getElementById('shopping_list');
+//     finalList.innerHTML += `<li>${myShoppingList[i]}</li>`;
+//     i++;
+    
+//   } while (i < myShoppingList.length);
 
 
 

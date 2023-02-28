@@ -5,7 +5,7 @@ Facciamo attenzione a non dimenticare tutte le differenze implementative che il 
 SVOLGIMENTO: IPOTESI INIZIALI
 
 - creare un Array con la mia lista della spesa;
-- utilizzare il ciclo While per passare in rassegna gli elementi dell'array.
-- dare una posizione di partenza dell'array prima dell'apertura del ciclo while.
-- all'interno del ciclo, creare gli elementi html per poter stampare la lista della spesa sulla pagina web.
-- agganciare gli elementi alle classi/id create per il contenitore html.
+- creare una variabile LET con indice pari a 0 (posizionamento 0) fuori dal ciclo, dato che tale indice non sarà possibile inserirlo nella condizione di partenza (come accade invece con il ciclo FOR);
+- creare ed utilizzare il ciclo While per passare in rassegna gli elementi dell'array.
+- all'interno del ciclo, creare una variabile che si agganci all'id della lista presente su html; successivamente aggiungere alla variabile l'elemento html lista "LI" che contenga il singolo elemento della lista spesa; in questo modo si dovrebbe poter stampare la lista sul DOM.
+- incrementare il valore di "i" con "i++" per passare all'elemento successivo del ciclo, fino al raggiungimento dell'ultimo elemento dell'array.
