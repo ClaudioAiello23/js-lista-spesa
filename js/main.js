@@ -29,20 +29,17 @@ const myShoppingList = [
   let i = 0;
   console.log('LA MIA LISTA DELLA SPESA:');
 
-  const finalList = document.getElementById('shopping_list');
-
   while (i < myShoppingList.length){
-    
     
     console.log(myShoppingList[i]);
     i++;
-    
-    const listItems = document.createElement('li');
-    listItems.append(myShoppingList[i]);
-    console.log(listItems);
-    finalList.append(listItems);
 
+    const finalList = document.getElementById('shopping_list');
+    finalList.innerHTML += `<li>${myShoppingList[i]}</li>`;
+    
   }
+
+
 
 
 
