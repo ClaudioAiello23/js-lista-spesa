@@ -4,7 +4,8 @@ Facciamo attenzione a non dimenticare tutte le differenze implementative che il 
 --------------------------------------------------------------
 SVOLGIMENTO: IPOTESI INIZIALI
 
-- richiedere all'utente di inserire un prodotto da acquistare al supermercato;
-- l'utente può ripetutamente inserire prodotti (ciclo WHILE);
-- finchè l'utente non ha finito di inserire prodotti, la richiesta di prodotti continua nel ciclo; un'idea potrbbe essere che lui scriva una determinata istruzione per terminare la lista della spesa.
-- una volta fuori dal ciclo, stampare sia su console sia su html la lista della spesa.
+- creare un Array con la mia lista della spesa;
+- utilizzare il ciclo While per passare in rassegna gli elementi dell'array.
+- dare una posizione di partenza dell'array prima dell'apertura del ciclo while.
+- all'interno del ciclo, creare gli elementi html per poter stampare la lista della spesa sulla pagina web.
+- agganciare gli elementi alle classi/id create per il contenitore html.
