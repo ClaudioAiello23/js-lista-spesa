@@ -30,6 +30,9 @@ const myShoppingList = [
 // Creo una variabile LET "indice" con valore di partenza = posizione 0 (Nutella);
     let i = 0;
 
+// Creo una variabile finalList che và a prendere dall'id html dell'UL;
+const finalList = document.getElementById('shopping_list');
+
 
 /*Creo un ciclo while impostando che fino a quando l'indice "i" è minore della
 lunghezza dell'Array, si crei da console e su html la lista della spesa;
@@ -38,7 +41,6 @@ fino a raggiungere la lunghezza dell'Array (per poi fermarsi)*/
 while (i < myShoppingList.length){
 
     console.log(myShoppingList[i]);
-    const finalList = document.getElementById('shopping_list');
     finalList.innerHTML += `<li>${myShoppingList[i]}</li>`;
     i++;
 
@@ -49,10 +51,12 @@ while (i < myShoppingList.length){
 /*Stesso risultato (alternativo) con il ciclo DO-WHILE commentato 
 (testato e funzionante)*/
 
+/*let i = 0;
+const finalList = document.getElementById('shopping_list');*/
+
 //   do {
 
 //     console.log(myShoppingList[i]);
-//     const finalList = document.getElementById('shopping_list');
 //     finalList.innerHTML += `<li>${myShoppingList[i]}</li>`;
 //     i++;
     
